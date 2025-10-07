@@ -1,40 +1,20 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from "react";
 
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900" dir="rtl">
-      <Header />
-      <main className="mx-auto max-w-6xl px-4 pb-24">
-        <Hero />
-        <SectionGrid />
-        <FooterCTA />
-      </main>
+    <div style={{ 
+      textAlign: "center",
+      paddingTop: "100px",
+      fontFamily: "sans-serif"
+    }}>
+      <h1>🍽️ Welcome to AI Group QR Menu</h1>
+      <p>This is your first deployed React app on Vercel 🎉</p>
+      <p>Everything is working perfectly!</p>
     </div>
-  )
+  );
 }
 
-function Header() {
-  return (
-    <header className="sticky top-0 z-40 backdrop-blur bg-white/75 border-b border-slate-200">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-2xl bg-blue-600 text-white grid place-items-center text-lg font-bold shadow-sm">QR</div>
-          <div className="leading-tight">
-            <h1 className="text-base md:text-lg font-bold text-slate-900">منوی خدمات هوشمند</h1>
-            <p className="text-xs md:text-sm text-slate-500">ساده، مینیمال، حرفه‌ای</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-2 text-xs md:text-sm text-slate-600">
-          <span className="hidden sm:inline">پشتیبانی</span>
-          <span className="h-1 w-1 rounded-full bg-slate-300" />
-          <span className="hidden sm:inline">نسخه آزمایشی</span>
-        </div>
-      </div>
-    </header>
-  )
-}
-
-function Hero() {
+export default App;function Hero() {
   return (
     <section className="pt-10 pb-6">
       <div className="rounded-3xl border border-slate-200 bg-gradient-to-b from-blue-50 to-white p-6 md:p-8 shadow-sm">
